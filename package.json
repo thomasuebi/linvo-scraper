@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/linkedin.service.js",
   "scripts": {
+    "start-example": "node --inspect=5858 -r ts-node/register ./lib/test.example.ts",
     "start": "./node_modules/.bin/ts-node lib/test.ts",
     "watch": "./node_modules/typescript/bin/tsc --watch",
     "build": "./node_modules/typescript/bin/tsc"
@@ -25,11 +26,15 @@
     "@types/moment": "^2.13.0",
     "@types/sentiment": "^5.0.1",
     "@types/string-similarity": "^4.0.0",
+    "axios": "^1.1.3",
     "emoji-strip": "^1.0.1",
+    "envy": "^2.0.0",
     "ghost-cursor": "^1.1.15",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "puppeteer-core": "^18.2.1",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-stealth": "^2.11.1",
     "querystring": "^0.2.1",
     "sentiment": "^5.0.2",
     "string-similarity": "^4.0.4"
